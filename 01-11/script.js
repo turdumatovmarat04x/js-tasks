@@ -11,10 +11,10 @@ console.log(sum);
 
 const elements1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sum1 = 0;
-let sumSums = 0
+let sum2 = 0
 for (let i = 0; i < elements1.length; i++){
     sum1 = elements1[i] * elements1[i]
-    sumSums += sum1;
+    sum2 += sum1;
 }
 console.log(sum1);
 
