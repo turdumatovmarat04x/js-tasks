@@ -12,7 +12,7 @@ console.log(user_name);
 if(user_name === "Админ"){
     let password = prompt('Пароль','');
 
-    if(password == 'Черный Властелин'){
+    if(password == 'Мастера меча онлайн'){
         alert("Добро пожаловать")
     }else if(password){
         alert("Пароль не верный")
