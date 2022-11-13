@@ -1,56 +1,59 @@
-// Составьте программу, которая принимает с клавиатуры числа, пока не будет
-// введено значение 0.
-// Для каждого введенного с клавиатуры положительного числа, программа должна
-// выводить на экран "плюс", для каждого отрицательного – "минус".
-//     Например: ввод: 7, 14, -18, 0 ⇒ вывод: плюс, плюс, минус
+const images = document.querySelectorAll('#images-block img');
+
+ for (let i = 0; i < images.length; i++){
+    images[i].onclick = () => {
+        alert(images[i].alt);
+    }
+}
 
 
-// const showResults = () => {
-//     let value;
-//     while (value !== 0){
-//         value = +prompt('Ввелите число');
-//
-//         if (value > 0){
-//             alert('плюс');
-//         } else if (value < 0){
-//             alert('минус');
-//         }
-//     }
-// }
-// showResults();
+function getString() {
+    let str = '';
+
+    for (let i = 0; i < arguments.length; i++){
+        str += arguments[i] + ' ';
+    }
+
+    return str;
+}
+ const result = getString('Hello', 'World', 'Good', 'Jobs');
+
+console.log(result)
 
 
-/******** slice ********/
-// const countries = ['Kyrgyzstan', 'Russia', 'China', 'USA'];
-// const newCountries = countries.slice(2,4);
-//
-// console.log(newCountries);
+const first_image = document.getElementById('first-img');
+const second_image = document.getElementById('second-img');
+const third_image = document.querySelector('#third-image');
+const fourth_image = document.querySelector('#fourth-image');
+
+first_image.onclick = () => {
+    console.log('Good morning');
+}
+
+second_image.onclick = () => {
+    console.log('Woooork');
+}
+
+third_image.onclick = () => {
+    console.log('Heloo world');
+    return false;
+}
+
+third_image.onmousemove = () => {
+    console.log('log')
+}
+
+fourth_image.onmouseenter = () => {
+    console.log('Work');
+}
+fourth_image.onmouseleave = () => {
+    console.log('Good jobs')
+}
 
 
-/******** slice ********/
-// const countries = ['Kyrgyzstan', 'Russia', 'China', 'USA'];
-// const arr = countries.splice(1,0, 'Portugal');
-// console.log(arr);
+const first_button = document.querySelector('#next-block');
+const showMessage1 = () => {
+    alert('Черный кот с рыбкой,  Хаски,  Леопард,  Кот с наушниками');
+}
 
-
-/******** setTimeOut ********/
-// const hello = (message) => {
-//     alert(message);
-// }
-//
-// const timerId = setTimeout(hello, 3000, 'good morning');
-// clearTimeout(timerId);
-
-
-/******** setInteval ********/
-// const updateTime = () => {
-//     document.getElementById('time').innerText = new Date().toTimeString();
-// }
-// const stopTime = (id) => {
-//     clearInterval(id);
-// }
-// const intervalId = setInterval(updateTime, 1000);
-// setTimeout(stopTime, 5000, intervalId);
-
-
-
+first_button.onclick = showMessage1;

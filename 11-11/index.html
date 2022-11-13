@@ -6,9 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .images img {
+            height: 500px;
+            width: 400px;
+        }
+        .next{
+            border-radius: 10px;
+            padding: 20px 20px;
+        }
+    </style>
 </head>
 <body>
-<h1 id="time"></h1>
+<div class="images" id="images-block">
+    <img src="images/1.%20Черный%20кот%20с%20рыбкой.jpg" alt="рыбкой" id="first-img">
+    <img src="images/2.%20Хаски.jpg" alt="xаски" id="second-img">
+    <img src="images/3.%20Леопард.jpg" alt="Леопард" id="third-image">
+    <img src="images/4.%20Кот%20с%20наушниками.jpg" alt="наушниками" id="fourth-image">
+</div>
+<button class="next" id="next-block">Country</button>
+
 
 <script src="script.js"></script>
 </body>
